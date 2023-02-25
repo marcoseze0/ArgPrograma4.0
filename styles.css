@@ -60,6 +60,10 @@ html {
   color: whitesmoke;
 }
 
+.navbar a:visited {
+  color: black;
+}
+
 /* SECTION CARD */
 .card {
   background-color: aliceblue;
@@ -94,6 +98,53 @@ html {
   margin-top: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.icons {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  transition: ease 0.5s;
+}
+
+svg:hover {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  background-color: aquamarine;
+  transform: rotate(-10deg);
+}
+
+.card {
+  margin-bottom: 5rem;
+}
+
+/* about me */
+
+hr {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.about-description {
+  margin: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1.4px;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
