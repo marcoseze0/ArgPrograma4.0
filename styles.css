@@ -8,6 +8,7 @@
 
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
 }
 
 .text-center {
@@ -17,13 +18,25 @@ html {
 /* HEADER */
 
 .header {
-  margin-top: 20px;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-image: url(img/header1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .header span {
+  font-size: 2rem;
   font-weight: 700;
-  color: blue;
+  color: #fff;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 3rem;
 }
 
 /* NAVBAR  */
@@ -36,7 +49,7 @@ html {
 }
 
 .navbar a {
-  font-weight: 400;
+  font-size: 1rem;
   padding: 1rem;
   text-decoration: none;
   border-radius: 10px;
@@ -45,4 +58,48 @@ html {
 .navbar a:hover {
   background-color: goldenrod;
   color: whitesmoke;
+}
+
+/* SECTION CARD */
+.card {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-info {
+  border-radius: 5px;
+  background: rgb(28, 170, 165);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.card-foto img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.card p {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+  .navbar a {
+    font-size: 2rem;
+  }
 }
