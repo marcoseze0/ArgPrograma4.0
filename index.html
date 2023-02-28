@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b02506bd5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
     <header id="header" class="header">
-        <h2 class="text-center">Munoz Marcos <span>Freelancer</span> </h2>
+        <h2 class="text-center animate__animated animate__backInRight">Munoz Marcos <span>Freelancer</span> </h2>
     </header>
 
     <nav class="navbar">
@@ -20,7 +21,7 @@
         <a href="#sobremi">Sobre Mi</a>
         <a href="#titulo">Viajes</a>
         <a href="#estudios">Estudios</a>
-        <a href="#">Contacto</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     <!-- CARD INFO -->
     <section id="sobremi" class="card">
@@ -61,16 +62,24 @@
     <section class="about">
         <hr>
         <div class="about-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, praesentium obcaecati itaque adipisci
-                soluta necessitatibus rerum ex facere omnis, laboriosam consectetur quibusdam recusandae ad dicta
-                accusantium saepe eius? Autem quas sed in nemo expedita numquam officia vero laborum voluptatibus
-                veritatis!</p>
+            <p>Bienvenido a mi CV, antes de poner un Lorempsun, les comento algo sobre mi. Mi nombre es Marcos tengo 32
+                años tengo estudios en Sistemas y Telecomunicaciones, siempre me gusto esta area de la informatica y
+                ahora opte por la programacion. Empezando por Cursos en la academia CoderHouse, donde aprendi HTML,CSS,
+                JS, React, Node, en otras palabras Full Stack.
+                Pero me di cuenta que al abarcar muchos lenguajes en tan poco tiempo, no llegaba a enterder claramente
+                los conceptos. De ahi como autodidacto complemente con muchos otros cursos de Udemy, Educacion IT y
+                demas.
+                Hoy tengo en claro el camino que voy a seguir hasta dominar mi Objetivo, el cual es: dominar JS y aprender React y por
+                el momento Optar por el Front-End.
+                <br> Muchas Gracias espero poder seguir con mas cursos
+
+
         </div>
         <hr>
     </section>
 
     <!-- GALERRY -->
-    <h2 id="titulo" class="titulo">DESTINOS</h2>
+    <h2 id="titulo" class="titulo animate__swing">DESTINOS</h2>
 
     <div class="gallery-container">
         <div class="gallery-item">
@@ -99,7 +108,7 @@
         </div>
     </div>
     </div>
-    <hr class="skills-hr">
+    <hr>
 
     <!-- SKILLS Y EXPERIENCE -->
     <section class="skills">
@@ -149,28 +158,34 @@
                 <p>En Progreso</p>
             </div>
         </div>
-        <hr class="skills-hr">
+        <hr>
         <!-- CONTACTO -->
-        <div class="form">
-            <div class="form-contacto">
-                <h2>Contacta<span>me</span></h2>
-                <p>e-mail: marcos87eze@gmail.com</p>
-                <p>Cordoba - Argentina</p>
-                <form class="form-caja" action="">
-                    <input type="text" name="name" id="name" placeholder="Tu Nombre">
-                    <input type="email" placeholder="E-mail">
-                    <textarea name="msj" id="msj" cols="30" rows="5" placeholder="Tu Mensaje"></textarea>
-                </form>
-            </div>
-            <div class="form-img">
-                <img src="img/img (11).JPG" alt="">
-            </div>
+        <section class="contacto" id="contacto">
+            <form class="form" action="">
+                <div class="form-inputs">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-inputs">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="e" placeholder="E-Mail">
+                </div>
+                <div class="form-inputs">
+                    <p>Deja tu mensaje</p>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+                </div>
+                <div class="form-inputs">
+                    <button type="submit">Enviar</button>
 
-        </div>
+                </div>
+            </form>
+        </section>
 
         <!-- FOOTER -->
-        <footer>
-
+        <footer class="foo">
+            <div class="foo-derechos">
+                <p>Todos los derechos reservados Munoz Marcos Ezequiel</p>
+            </div>
         </footer>
 
     </section>
